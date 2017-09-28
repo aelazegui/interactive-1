@@ -171,7 +171,7 @@ $( document ).ready(function() {
   <style>
 
     body {
-      background-color: ##d1b48c;
+      background-color: white;
       padding: -30px;
     }
 
@@ -179,56 +179,38 @@ $( document ).ready(function() {
       position: fixed;
       text-transform: uppercase;
       color: white;
-      letter-spacing: 2px !important;
-      font-size: 150px !important;
-      line-height: 150px !important;
+      letter-spacing: 2px;
+      font-size: 150px;
+      line-height: 150px;
       font-family: 'Bungee', cursive;
       font-weight: normal;
-      margin-top: 40px !important;
-      margin-left: 75px !important;
+      margin-top: 40px;
+      margin-left: 75px;
       transition: .8s all ease;
     }
 
-
-.orig-bullblue {
-  color: white;
-  letter-spacing: 2px;
-  font-size: 150px;
-  line-height: 150px;
-  font-family: 'Bungee', cursive;
-  font-weight: normal;
-  transition: 3s all ease;
+  .shit {
+    color: white !important;
+    letter-spacing: 2px;
+    font-size: 150px;
+    line-height: 150px;
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+  -webkit-transform: rotate(0deg);
+  transition: .5s;
 }
 
-.orig-shitred {
-  color: white;
-  letter-spacing: 2px;
-  font-size: 150px;
-  line-height: 150px;
-  font-family: 'Bungee', cursive;
-  font-weight: normal;
-  transition: 3s all ease;
-}
-
-.highlight-bullblue {
-  color: blue;
-  letter-spacing: 2px;
-  font-size: 150px;
-  line-height: 150px;
-  font-family: 'Bungee', cursive;
-  font-weight: normal;
-  transition: 3s all ease;
-}
-
-.highlight-shitred {
-  color: red;
-  letter-spacing: 2px;
-  font-size: 150px;
-  line-height: 150px;
-  font-family: 'Bungee', cursive;
-  font-weight: normal;
-  transition: 3s all ease;
-}
+  .shit: hover {
+      color: blue;
+      letter-spacing: 2px;
+      font-size: 150px;
+      line-height: 150px;
+      font-family: 'Bungee', cursive;
+      font-weight: normal;
+      transition: 3s all ease;
+      -webkit-transform: rotate(270deg);
+      transition: 2.2s;
+    }
 
     .block {
       line-height: 10px;
@@ -328,12 +310,6 @@ $( document ).ready(function() {
       }
 
 
-      .star {
-      position: absolute !important;
-      font-size: 200px;
-      color: white;
-      }
-
   </style>
 
 
@@ -356,9 +332,7 @@ $( document ).ready(function() {
     <span class="hoverme-FOf">F</span>
 
     <br>
-
-bullshit
-  </h1>
+    bullshit  </h1>
 
 <div class="block">
 
