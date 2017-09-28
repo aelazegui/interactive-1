@@ -20,21 +20,45 @@ $( document ).ready(function() {
          $( ".circle" ).toggleClass( "clicked" );
        });
 
-  $(".clickme").hover(
+  $(".hoverme-BBill").hover(
     function () {
-      $(".changetext").addClass("highlight");
+      $(".changetext-BBill").addClass("highlight");
     },
     function () {
-      $(".changetext").removeClass("highlight");
+      $(".changetext-BBill").removeClass("highlight");
     });
 
-  $(".clickme-IBill").hover(
+  $(".hoverme-IBill").hover(
     function () {
       $(".changetext-IBill").addClass("highlight");
     },
     function () {
       $(".changetext-IBill").removeClass("highlight");
     });
+
+  $(".hoverme-LBill").hover(
+    function () {
+      $(".changetext-LBill").addClass("highlight");
+    },
+    function () {
+      $(".changetext-LBill").removeClass("highlight");
+    });
+
+  $(".hoverme-L2Bill").hover(
+    function () {
+      $(".changetext-L2Bill").addClass("highlight");
+    },
+    function () {
+      $(".changetext-L2Bill").removeClass("highlight");
+    });
+
+    $(".hoverme-OOf").hover(
+      function () {
+        $(".changetext-OOf").addClass("highlight");
+      },
+      function () {
+        $(".changetext-OOf").removeClass("highlight");
+      });
 
 });
 
@@ -61,17 +85,8 @@ $( document ).ready(function() {
       margin-left: 75px;
     }
 
-    .highlight {
-      color: red;
-      position: ABSOLUTE;
-      font-size: 40px;
-      line-height: 50px;
-      font-family: 'Archivo Black', sans-serif;
-    }
-
     .block {
       line-height: 10px;
-      letter-spacing: .5px;
       top: -100px;
       bottom: -100px;
       left: -100px;
@@ -80,8 +95,53 @@ $( document ).ready(function() {
       font-family: 'Cairo', sans-serif;
       }
 
+    .changetext-BBill {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-IBill {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-LBill {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-L2Bill {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-OOf {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .highlight {
+      color: red;
+      position: ABSOLUTE;
+      font-size: 50px;
+      line-height: 50px;
+      font-family: 'Archivo Black', sans-serif;
+      transition: 1.5s all ease;
+    }
+
+      .shoot span {
+          margin-right: -30px;
+      }
+
+      .hoverme-L2Bill {
+      margin-right: 30px !important;
+      }
+
 
   </style>
+
+
+
 
 </head>
 
@@ -89,14 +149,29 @@ $( document ).ready(function() {
 
 <body>
 
+
   <h1 class="shoot">
-    <span class="clickme">B</span>
-    <span class="clickme-IBill">I</span>
-    LL OF BULLSHIT
+    <span class="hoverme-BBill">B</span>
+    <span class="hoverme-IBill">I</span>
+    <span class="hoverme-LBill">L</span>
+    <span class="hoverme-L2Bill">L</span>
+    <span class="hoverme-OOf">O</span>
+    <span class="hoverme-FOf">F</span>
+    <br>
+    <span class="hoverme-BBs">B</span>
+    <span class="hoverme-UBs">U</span>
+    <span class="hoverme-LBs">L</span>
+    <span class="hoverme-L2Bs">L</span>
+    <span class="hoverme-SBs">S</span>
+    <span class="hoverme-HBs">H</span>
+    <span class="hoverme-IBs">I</span>
+    <span class="hoverme-TBs">T</span>
   </h1>
 
 <div class="block">
-  <span class="changetext">Congress</span> shall make no law respecting an establishment of religion,
+
+<!--Section 1-->
+Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
 or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
 and to petition the government for a redress of grievances.
 
@@ -105,7 +180,7 @@ and to petition the government for a redress of grievances.
 
   Amendment III
   No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
-  but in a manner to be prescribed by law.
+  but in a manner to be prescribed by <span class="changetext-L2Bill">law</span>.
 
   Amendment IV
   The right of the people to be secure in their persons, houses, papers, and effects,
@@ -123,12 +198,12 @@ and to petition the government for a redress of grievances.
   Amendment VI
   In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
   by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
-  have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
+  have been previously ascertained by <span class="changetext-L2Bill">law</span>, and to be informed of the nature and cause of the accusation;
   to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
   and to have the assistance of counsel for his defense.
 
   Amendment VII
-  In suits at common law, where the value in controversy shall exceed twenty dollars,
+  In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
   the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
   in any court of the United States, than according to the rules of the common law.
 
@@ -143,12 +218,15 @@ and to petition the government for a redress of grievances.
   Amendment X
   The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
   are reserved to the states respectively, or to the people.
-  Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof;
+  Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
   or abridging the freedom of speech, or of the press; or the right of the peopl peaceably to assemble,
   and to petition the government for a redress of grievances.
 
+
+  <!--Section 2-->
+
 Amendment I
-Congress shall make no law respecting an establishment of religion,
+Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
 or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of hte people peaceably to assemble,
 and to petition the government for a redress of grievances.
 
@@ -157,7 +235,7 @@ and to petition the government for a redress of grievances.
 
   Amendment III
   No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
-  but in a manner to be prescribed by law.
+  but in a manner to be prescribed by <span class="changetext-L2Bill">law</span>.
 
   Amendment IV
   The right of the people to be secure in their persons, houses, papers, and effects,
@@ -169,20 +247,20 @@ and to petition the government for a redress of grievances.
   No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a grand jury,
   except in cases arising in the land or naval forces, or in the militia, when in actual service in time of war or public danger;
   nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled
-  in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law;
+  in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of <span class="changetext-L2Bill">law</span>;
   nor shall private property be taken for public use, without just compensation.
 
   Amendment VI
   In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
   by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
-  have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
+  have been previously ascertained by <span class="changetext-L2Bill">law</span>, and to be informed of the nature and cause of the accusation;
   to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
   and to have the assistance of counsel for his defense.
 
   Amendment VII
-  In suits at common law, where the value in controversy shall exceed twenty dollars,
-  the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
-  in any court of the United States, than according to the rules of the common law.
+  In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
+  the right of trial by jury shall be preserved, <span class="changetext-LBill">Life, liberty, or property</span> and no fact tried by a jury, shall be otherwise reexamined
+  in any court of the United States, than according to the rules of the common <span class="changetext-L2Bill">law</span>.
 
   Amendment VIII
   Excessive bail shall not be required, nor excessive fines imposed,
@@ -195,12 +273,15 @@ and to petition the government for a redress of grievances.
   Amendment X
   The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
   are reserved to the states respectively, or to the people.
-  Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof;
+  Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
   or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
   and to petition the government for a redress of grievances.
 
+
+  <!--Section 3-->
+
   Amendment I
-  Congress shall make no law respecting an establishment of religion,
+  Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
   or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
   and to petition the government for a redress of grievances.
 
@@ -209,7 +290,7 @@ and to petition the government for a redress of grievances.
 
     Amendment III
     No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
-    but in a manner to be prescribed by law.
+    but in a manner to be prescribed by <span class="changetext-L2Bill">law</span>.
 
     Amendment IV
     The right of the people to be secure in their persons, houses, papers, and effects,
@@ -227,14 +308,14 @@ and to petition the government for a redress of grievances.
     Amendment VI
     In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
     by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
-    have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
+    have been previously ascertained by <span class="changetext-L2Bill">law</span>, and to be informed of the nature and cause of the accusation;
     to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
     and to have the assistance of counsel for his defense.
 
     Amendment VII
-    In suits at common law, where the value in controversy shall exceed twenty dollars,
+    In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
     the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
-    in any court of the United States, than according to the rules of the common law.
+    in any court of the United States, than according to the rules of the common <span class="changetext-L2Bill">law</span>.
 
     Amendment VIII
     Excessive bail shall not be required, nor excessive fines imposed,
@@ -247,10 +328,14 @@ and to petition the government for a redress of grievances.
     Amendment X
     The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
     are reserved to the states respectively, or to the people.
-    Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof;
+    Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
     or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
     and to petition the government for a redress of grievances.
 
+
+    <!--Section 4-->
+
+<span class="changetext-LBill">is not</span>
     Amendment I
     Congress shall make no law respecting an establishment of religion,
     or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
@@ -261,11 +346,11 @@ and to petition the government for a redress of grievances.
 
       Amendment III
       No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
-      but in a to be prescribed by law.
+      but in a to be prescribed by <span class="changetext-L2Bill">law</span>.
 
       Amendment IV
       The right of the people to be secure in their persons, houses, papers, and effects,
-      against <span class="changetext">will violate</span> unreasonable searches and seizures, will violate, and no warrants shall issue,
+      against unreasonable searches and seizures,  and no warrants shall issue,
       but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
       and the persons or things to be seized.
 
@@ -274,7 +359,7 @@ and to petition the government for a redress of grievances.
       except in cases arising in the land or naval forces, or in the militia, when in actual service in time of war or public danger;
       nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled
       in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law;
-      nor shall private property be taken for public use, without just compensation.
+      nor shall private property be taken for public use, without just compensation. <span class="changetext-LBill">in defense</span>
 
       Amendment VI
       In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
@@ -286,7 +371,7 @@ and to petition the government for a redress of grievances.
       Amendment VII
       In suits at common law, where the value in controversy shall exceed twenty dollars,
       the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
-      in any court of the United States, than according to the rules of the common law.
+      in any court of the United States, than according to the rules of the common <span class="changetext-L2Bill">law</span>.
 
       Amendment VIII
       Excessive bail shall not be required, nor excessive fines imposed,
@@ -296,15 +381,30 @@ and to petition the government for a redress of grievances.
       The enumeration in the Constitution, of the right of the people, shall not be construed
       to deny or disparage others retained by the people.
 
-      Amendment X
-      The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
-      are reserved to the states respectively, or to the people.
-      Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof;
-      or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
-      and to petition the government for a redress of grievances.
+      Amendment VII
+      In suits at common law, where the value in controversy shall exceed twenty dollars,
+      the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
+      in any court of the United States, than according to the rules of the common <span class="changetext-L2Bill">law</span>.
+
+      Amendment VIII
+      Excessive bail shall not be required, nor excessive fines imposed,
+      nor cruel and unusual punishments inflicted.
+
 
       Amendment I
-      Congress shall make no law respecting an establishment of religion,
+      Congress shall make no <span class="changetext-L2Bill">law</span>respecting an establishment of religion,
+      or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
+      and to petition the government for a redress of grievances.
+
+        Amendment II
+        A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall infringe.
+
+        Amendment III
+        No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
+        but in a manner to be prescribed by <span class="changetext-L2Bill">law</span>.
+
+      Amendment I
+      Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
       or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
       and to petition the government for a redress of grievances.
 
@@ -315,9 +415,81 @@ and to petition the government for a redress of grievances.
         No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
         but in a manner to be prescribed by law.
 
+
+
+
+      Amendment IX
+      The enumeration in the Constitution, of the right of the people, shall not be construed
+      to deny or disparage others retained by the people.
+
+      Amendment III
+      No soldier shall, in time of peace be quartered in any house,
+
+      Amendment IX
+      The enumeration in the Constitution, of the right of the people, shall not be construed
+      to deny or disparage others retained by the people.
+
+      Amendment IX
+      The enumeration in the Constitution, of the right of the people, shall not be construed
+      to deny or disparage others retained by the people.
+
+      Amendment IX
+      The enumeration in the Constitution, of the right of the people, shall not be construed
+      to deny or disparage others retained by the people.
+
+      Amendment X
+      The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
+      are reserved to the states respectively, or to the people.
+
+
+              Amendment II
+              A well regulated militia, being necessary to the security of a free state, the right of the
+
+
+      Amendment X
+      The powers not delegated to the United States by the Constitution,
+      <span class="changetext-BBill">Congress</span> shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
+      or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
+      and to petition the government for a redress of grievances.
+
+
+      <!--Section 5-->
+
+      Amendment I
+      Congress shall make no<span class="changetext-L2Bill">law</span> respecting an establishment of religion,
+      or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
+      and to petition the government for a redress of grievances.
+
+        Amendment II
+        A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall infringe.
+
+                Amendment II
+                A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall infringe.
+
+        Amendment III
+        No soldier shall, in time of peace be quartered in any house,
+
         Amendment IV
         The right of the people to be secure in their persons, houses, papers, and effects,
-        against unreasonable searches and seizures, will violate, and no warrants shall issue,
+
+        Amendment III
+        No soldier shall, in time of peace be quartered in any house,
+
+        Amendment IV
+        The right of the people to be secure in their persons, houses, papers, and effects,
+
+        Amendment III
+        No soldier shall, in time of peace be quartered in any house,
+
+
+        Amendment IV
+        The right of the people to be secure in their persons, houses, papers, and effects,
+
+        <span class="changetext-LBill">upon probable cause.</span>
+
+        Amendment IV
+        The right of the people to be secure in their persons, houses, papers, and effects,
+        against unreasonable searches and seizures, <span class="changetext-BBill">will violate</span>, and no warrants shall issue,
         but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
         and the persons or things to be seized.
 
@@ -329,9 +501,9 @@ and to petition the government for a redress of grievances.
         nor shall private property be taken for public use, without just compensation.
 
         Amendment VI
-        In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
+      <span class="changetext-IBill">In criminal prosecutions,</span>, the accused shall enjoy the right to a speedy and public trial,
         by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
-        have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
+        have been previously ascertained by <span class="changetext-L2Bill">law</span>, and to be informed of the nature and cause of the accusation;
         to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
         and to have the assistance of counsel for his defense.
 
@@ -351,12 +523,16 @@ and to petition the government for a redress of grievances.
         Amendment X
         The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
         are reserved to the states respectively, or to the people.
-        Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof;
+        Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
         or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
         and to petition the government for a redress of grievances.
 
+        <!--Section 6-->
+
+
+
         Amendment I
-          <span class="changetext-IBill">The government</span> shall make no law respecting an establishment of religion,
+          The government shall make no law respecting an establishment of religion,
         or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
         and to petition the government for a redress of grievances.
 
@@ -365,12 +541,12 @@ and to petition the government for a redress of grievances.
 
           Amendment III
           No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
-          but in a manner to be prescribed by law.
+          but in a manner to be prescribed by <span class="changetext-L2Bill">law</span>.
 
-          Amendment IV
+          Amendment IV <span class="changetext">the right of the people</span>
           The right of the people to be secure in their persons, houses, papers, and effects,
           against unreasonable searches and seizures, will violate, and no warrants shall issue,
-          but upon probable cause, <span class="changetext">the right of the people</span> supported by oath or affirmation, and particularly describing the place to be searched,
+          but upon probable cause,  supported by oath or affirmation, and particularly describing the place to be searched,
           and the persons or things to be seized.
 
           Amendment V
@@ -383,12 +559,12 @@ and to petition the government for a redress of grievances.
           Amendment VI
           In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
           by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
-          have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
+          have been previously ascertained by <span class="changetext-L2Bill">law</span>, and to be informed of the nature and cause of the accusation;
           to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
           and to have the assistance of counsel for his defense.
 
           Amendment VII
-          In suits at common law, where the value in controversy shall exceed twenty dollars,
+          In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
           the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
           in any court of the United States, than according to the rules of the common law.
 
@@ -403,11 +579,14 @@ and to petition the government for a redress of grievances.
           Amendment X
           The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
           are reserved to the states respectively, or to the people.
-           no law respecting an establishment of religion, or prohibiting the free exercise thereof;
+           no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
           or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
           and to petition the government for a redress of grievances.
+
+          <!--Section 7-->
+
           Amendment I
-          Congress shall make no law respecting an establishment of religion,
+          Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
           or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
           and to petition the government for a redress of grievances.
 
@@ -422,7 +601,7 @@ and to petition the government for a redress of grievances.
             The right of the people to be secure in their persons, houses, papers, and effects,
             against unreasonable searches and seizures, will violate, and no warrants shall issue,
             but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
-            and the persons or things to be seized.Amendment I
+            and the persons or things to be seized.Amendment I <span class="changetext-BBill">the right of the people</span>
             Congress shall make no law respecting an establishment of religion,
             or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
             and to petition the government for a redress of grievances.
@@ -434,13 +613,16 @@ and to petition the government for a redress of grievances.
               No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
               but in a manner to be prescribed by law.
 
-              Amendment IV
+              Amendment IV <span class="changetext-IBill">cruel and unusual punishments</span>
               The right of the people to be secure in their persons, houses, papers, and effects,
               against unreasonable searches and seizures, will violate, and no warrants shall issue,
               but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
-              and the persons or things to be seized.Amendment I
-              Congress shall make no law respecting an establishment of religion,
-              or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
+              and the persons or things to be seized.
+
+
+              Amendment I
+              Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
+              or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or  peaceably to assemble,
               and to petition the government for a redress of grievances.
 
                 Amendment II
@@ -455,6 +637,10 @@ and to petition the government for a redress of grievances.
                 against unreasonable searches and seizures, will violate, and no warrants shall issue,
                 but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
                 and the persons or things to be seized.
+
+        <!--Section 8-->
+
+
           Amendment I
           Congress shall make no law respecting an establishment of religion,
           or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
@@ -473,24 +659,86 @@ and to petition the government for a redress of grievances.
             but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
             and the persons or things to be seized.
 
+            Amendment III
+            No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
+            but in a manner to be prescribed by <span class="changetext-L2Bill">law</span>.
+
+            Amendment IV
+            The right of the people to be secure in their persons, houses, papers, and effects,
+            against unreasonable searches and seizures, will violate, and no warrants shall issue,
+            but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
+            and the persons or things to be seized.
+
             Amendment V
             No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a grand jury,
             except in cases arising in the land or naval forces, or in the militia, when in actual service in time of war or public danger;
             nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled
             in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law;
             nor shall private property be taken for public use, without just compensation.
-
-            Amendment VI
-            In all criminal prosecutions, <span class="changetext">when necessary and convenient</span> the accused shall enjoy the right to a speedy and public trial,
+            nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled
+            in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law;
+            nor shall private property be taken for public use, without just compensation.nor shall be compelled
+            in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of <span class="changetext-L2Bill">law</span>;
+            nor shall private property be taken for public use, <span class="changetext-BBill">when necessary and convenient</span> the accused shall enjoy the right to a speedy and public trial,
             by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
             have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
             to  be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
             and to have the assistance of counsel for his defense.
 
+
+            Amendment VII
+            In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
+            the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
+            in any court of the United States, than according to the rules of the common <span class="changetext-L2Bill">law</span>.
+
+            Amendment VIII
+            Excessive bail shall not be required, nor excessive fines imposed,
+            nor cruel and unusual punishments <span class="changetext-IBill">are inflicted</span>.
+
+            Amendment IX
+            The enumeration in the Constitution, of the right of the people, shall not be construed
+            to deny or disparage others retained by the people.
+
             Amendment VII
             In suits at common law, where the value in controversy shall exceed twenty dollars,
             the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
+            in any court of the United States, than according to the rules of the common <span class="changetext-L2Bill">law</span>.
+
+            Amendment VIII
+            Excessive bail shall not be required, nor excessive fines imposed,
+            nor cruel and unusual punishments.
+
+            Amendment IX
+            The enumeration in the Constitution, of the right of the people, shall not be construed
+            to deny or disparage others retained by the people.
+
+            Amendment VII
+            In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
+            the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
             in any court of the United States, than according to the rules of the common law.
+
+            Amendment VIII
+            Excessive bail shall not be required, nor excessive fines imposed,
+            nor cruel and unusual punishments inflicted.
+
+            Amendment VII
+            In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
+            the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
+            in any court of the United States, than according to the rules of the common law.
+
+            Amendment VIII
+            Excessive bail shall not be required, nor excessive fines imposed,
+
+            <span class="changetext-BBill">without due process of law</span>
+
+            Amendment IX
+            The enumeration in the Constitution, of the right of the people, shall not be construed
+            to deny or disparage others retained by the people.
+
+            Amendment VII
+            In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
+            the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
+            in any court of the United States, than according to the rules of the common <span class="changetext-L2Bill">law</span>.
 
             Amendment VIII
             Excessive bail shall not be required, nor excessive fines imposed,
@@ -500,16 +748,19 @@ and to petition the government for a redress of grievances.
             The enumeration in the Constitution, of the right of the people, shall not be construed
             to deny or disparage others retained by the people.
 
+
+
             Amendment X
             The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
             are reserved to the states respectively, or to the people.
-            Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; <span class="changetext">without due process of law</span>
+            Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
             or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
-            and to petition the government for a redress of grievances. <span class="changetext-IBill">doesn't give a shit</span>
+            and to petition the government for a redress of grievances.
 
 
+<!--Section 9-->
             Amendment I
-            Congress shall make no law respecting an establishment of religion,
+            Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
             or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
             and to petition the government for a redress of grievances.
 
@@ -518,10 +769,10 @@ and to petition the government for a redress of grievances.
 
               Amendment III
               No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war,
-              but in a manner to be prescribed by law.
+              but in a manner to be prescribed by <span class="changetext-L2Bill">law</span>.
 
               Amendment IV
-              The right of <span class="changetext-IBill">shit</span> to be secure in their persons, houses, papers, and effects,
+              The right of to be secure in their persons, houses, papers, and effects,
               against unreasonable searches and seizures, will violate, and no warrants shall issue,
               but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
               and the persons or things to be seized.
@@ -531,22 +782,22 @@ and to petition the government for a redress of grievances.
               except in cases arising in the land or naval forces, or in the militia, when in actual service in time of war or public danger;
               nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled
               in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law;
-              nor shall private property be taken for <span class="changetext-IBill">shit</span> use, without just compensation.
+              nor shall private property be taken for use, without just compensation.
 
               Amendment VI
               In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
               by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
-              have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
+              have been previously ascertained by <span class="changetext-L2Bill">law</span>, and to be informed of the nature and cause of the accusation;
               to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
               and to have the assistance of counsel for his defense.
 
               Amendment VII
-              In suits at common law, where the value in controversy shall exceed twenty dollars,
+              In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
               the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
-              in any court of the United States, than according to the rules of the common law.
+              in any court of the United States, than according to the rules of the common <span class="changetext-L2Bill">law</span>
 
               Amendment VIII
-              Excessive bail <span class="changetext-IBill">SHIT</span> be required, nor excessive fines imposed,
+              Excessive bail be required, nor excessive fines imposed,
               nor cruel and unusual punishments inflicted.
 
               Amendment IX
@@ -556,13 +807,14 @@ and to petition the government for a redress of grievances.
               Amendment X
               The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
               are reserved to the states respectively, or to the people.
-              Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof;
+              Congress shall make no<span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
               or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
               and to petition the government for a redress of grievances.
 
+<!--Section 10-->
 
               Amendment I
-              Congress shall make no law respecting an establishment of religion,
+              Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
               or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
               and to petition the government for a redress of grievances.
 
@@ -583,18 +835,18 @@ and to petition the government for a redress of grievances.
                 No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a grand jury,
                 except in cases arising in the land or naval forces, or in the militia, when in actual service in time of war or public danger;
                 nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled
-                in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law;
+                in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of <span class="changetext-L2Bill">law</span>;
                 nor shall private property be taken for public use, without just compensation.
 
                 Amendment VI
                 In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
                 by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
-                have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
+                have been previously ascertained by <span class="changetext-L2Bill">law</span>, and to be informed of the nature and cause of the accusation;
                 to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
                 and to have the assistance of counsel for his defense.
 
                 Amendment VII
-                In suits at common law, where the value in controversy shall exceed twenty dollars,
+                In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
                 the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
                 in any court of the United States, than according to the rules of the common law.
 
@@ -609,11 +861,11 @@ and to petition the government for a redress of grievances.
                 Amendment X
                 The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
                 are reserved to the states respectively, or to the people.
-                Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof;
+                Congress shall make no <span class="L2Bill"><span class="changetext-L2Bill">law</span></span> respecting an establishment of religion, or prohibiting the free exercise thereof;
                 or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
                 and to petition the government for a redress of grievances.
 
-
+<!--Section 11-->
                 Amendment I
                 Congress shall make no law respecting an establishment of religion,
                 or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
@@ -642,14 +894,14 @@ and to petition the government for a redress of grievances.
                   Amendment VI
                   In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
                   by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
-                  have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
+                  have been previously ascertained by <span class="changetext-L2Bill">law</span>, and to be informed of the nature and cause of the accusation;
                   to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
                   and to have the assistance of counsel for his defense.
 
                   Amendment VII
-                  In suits at common law, where the value in controversy shall exceed twenty dollars,
+                  In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
                   the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined
-                  in any court of the United States, than according to the rules of the common law.
+                  in any court of the United States, than according to the rules of the common <span class="changetext-L2Bill">law</span>.
 
                   Amendment VIII
                   Excessive bail shall not be required, nor excessive fines imposed,
@@ -662,7 +914,7 @@ and to petition the government for a redress of grievances.
                   Amendment X
                   The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
                   are reserved to the states respectively, or to the people.
-                  Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof;
+                  Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
                   or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
                   and to petition the government for a redress of grievances.
 
