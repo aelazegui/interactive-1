@@ -60,6 +60,97 @@ $( document ).ready(function() {
         $(".changetext-OOf").removeClass("highlight");
       });
 
+      $(".hoverme-FOf").hover(
+        function () {
+          $(".changetext-FOf").addClass("highlight");
+        },
+        function () {
+          $(".changetext-FOf").removeClass("highlight");
+        });
+
+        $(".hoverme-BBs").hover(
+          function () {
+            $(".changetext-BBs").addClass("highlight");
+          },
+          function () {
+            $(".changetext-BBs").removeClass("highlight");
+          });
+
+          $(".hoverme-UBs").hover(
+            function () {
+              $(".changetext-UBs").addClass("highlight");
+            },
+            function () {
+              $(".changetext-UBs").removeClass("highlight");
+            });
+
+            $(".hoverme-LBs").hover(
+              function () {
+                $(".changetext-LBs").addClass("highlight");
+              },
+              function () {
+                $(".changetext-LBs").removeClass("highlight");
+              });
+
+              $(".hoverme-L2Bs").hover(
+                function () {
+                  $(".changetext-L2Bs").addClass("highlight");
+                },
+                function () {
+                  $(".changetext-L2Bs").removeClass("highlight");
+                });
+
+                $(".hoverme-SBs").hover(
+                  function () {
+                    $(".changetext-SBs").addClass("highlight");
+                  },
+                  function () {
+                    $(".changetext-SBs").removeClass("highlight");
+                  });
+
+
+
+                  $(".hoverme-HBs").hover(
+                    function () {
+                      $(".changetext-HBs").addClass("highlight");
+                    },
+                    function () {
+                      $(".changetext-HBs").removeClass("highlight");
+                    });
+
+
+                    $(".hoverme-IBs").hover(
+                      function () {
+                        $(".changetext-IBs").addClass("highlight");
+                      },
+                      function () {
+                        $(".changetext-IBs").removeClass("highlight");
+                      });
+
+                      $(".hoverme-TBs").hover(
+                        function () {
+                          $(".changetext-TBs").addClass("highlight");
+                        },
+                        function () {
+                          $(".changetext-TBs").removeClass("highlight");
+                        });
+
+    $(".hoverme-shitred").hover(
+          function () {
+            $(".hoverme-shitred").addClass("highlight-shitred");
+          },
+          function () {
+              $(".hoverme-shitred").removeClass("highligh-shitred");
+      });
+
+      $(".hoverme-bullblue").hover(
+            function () {
+              $(".hoverme-bullblue").addClass("highlight-bullblue");
+            },
+            function () {
+                $(".hoverme-bullblue").removeClass("highlight-bullblue");
+        });
+
 });
 
 </script>
@@ -76,14 +167,54 @@ $( document ).ready(function() {
       align-items: center;
       text-transform: uppercase;
       color: white;
-      letter-spacing: 2px;
-      font-size: 150px;
-      line-height: 150px;
+      letter-spacing: 2px !important;
+      font-size: 150px !important;
+      line-height: 150px !important;
       font-family: 'Bungee', cursive;
       font-weight: normal;
-      margin-top: 40px;
-      margin-left: 75px;
+      margin-top: 40px !important;
+      margin-left: 75px !important;
     }
+
+    .hoverme-shitred {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 150px;
+    line-height: 150px;
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+    transition: .8s all ease;
+  }
+
+  .hoverme-bullblue {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 150px;
+  line-height: 150px;
+  font-family: 'Bungee', cursive;
+  font-weight: normal;
+  transition: .8s all ease;
+}
+
+.highlight-bullblue {
+  color: blue;
+  letter-spacing: 2px;
+  font-size: 150px;
+  line-height: 150px;
+  font-family: 'Bungee', cursive;
+  font-weight: normal;
+  transition: 3s all ease;
+}
+
+.highlight-shitred {
+  color: red;
+  letter-spacing: 2px;
+  font-size: 150px;
+  line-height: 150px;
+  font-family: 'Bungee', cursive;
+  font-weight: normal;
+  transition: 3s all ease;
+}
 
     .block {
       line-height: 10px;
@@ -120,6 +251,51 @@ $( document ).ready(function() {
       transition: .5s all ease;
     }
 
+    .changetext-FOf {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-BBs {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-UBs {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-LBs {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-L2Bs {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-SBs {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-HBs {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-IBs {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
+    .changetext-TBs {
+      font-family: 'Cairo', sans-serif;
+      transition: .5s all ease;
+    }
+
     .highlight {
       color: red;
       position: ABSOLUTE;
@@ -137,6 +313,12 @@ $( document ).ready(function() {
       margin-right: 30px !important;
       }
 
+
+      .star {
+      position: absolute !important;
+      font-size: 200px;
+      color: white;
+      }
 
   </style>
 
@@ -158,17 +340,26 @@ $( document ).ready(function() {
     <span class="hoverme-OOf">O</span>
     <span class="hoverme-FOf">F</span>
     <br>
+  <span class="hoverme-bullblue">
+  <span class="hoverme-shitred">
     <span class="hoverme-BBs">B</span>
     <span class="hoverme-UBs">U</span>
     <span class="hoverme-LBs">L</span>
     <span class="hoverme-L2Bs">L</span>
+  <span class="changetext-shitred">
     <span class="hoverme-SBs">S</span>
     <span class="hoverme-HBs">H</span>
     <span class="hoverme-IBs">I</span>
     <span class="hoverme-TBs">T</span>
+  </span>
+  </span>
+ </span>
   </h1>
 
 <div class="block">
+
+
+
 
 <!--Section 1-->
 Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
@@ -211,6 +402,7 @@ and to petition the government for a redress of grievances.
   Excessive bail shall not be required, nor excessive fines imposed,
   nor cruel and unusual punishments inflicted.
 
+
   Amendment IX
   The enumeration in the Constitution, of the people, shall not be construed
   to deny or disparage others retained by the people.
@@ -227,7 +419,7 @@ and to petition the government for a redress of grievances.
 
 Amendment I
 Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion,
-or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of hte people peaceably to assemble,
+or prohibiting the free exercise thereof; or abridging <span class="changetext-FOf">Freedom</span> the of speech, or of the press; or the right of hte people peaceably to assemble,
 and to petition the government for a redress of grievances.
 
   Amendment II
@@ -257,6 +449,8 @@ and to petition the government for a redress of grievances.
   to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
   and to have the assistance of counsel for his defense.
 
+  <span class="star"><marquee behavior="scroll" direction="left">&#9733;</marquee></span>
+
   Amendment VII
   In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
   the right of trial by jury shall be preserved, <span class="changetext-LBill">Life, liberty, or property</span> and no fact tried by a jury, shall be otherwise reexamined
@@ -274,7 +468,7 @@ and to petition the government for a redress of grievances.
   The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
   are reserved to the states respectively, or to the people.
   Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
-  or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
+  or abridging the freedom of speech, or ; or the right of the <span class="changetext-FOf">of the press</span> people peaceably to assemble,
   and to petition the government for a redress of grievances.
 
 
@@ -365,7 +559,7 @@ and to petition the government for a redress of grievances.
       In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial,
       by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
       have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
-      to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
+      to be c  <span class="changetext-OOf">One</span> confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
       and to have the assistance of counsel for his defense.
 
       Amendment VII
@@ -388,7 +582,7 @@ and to petition the government for a redress of grievances.
 
       Amendment VIII
       Excessive bail shall not be required, nor excessive fines imposed,
-      nor cruel and unusual punishments inflicted.
+      nor cruel and unusual punishments inf. <span class="changetext-OOf">nation</span>
 
 
       Amendment I
@@ -422,8 +616,8 @@ and to petition the government for a redress of grievances.
       The enumeration in the Constitution, of the right of the people, shall not be construed
       to deny or disparage others retained by the people.
 
-      Amendment III
-      No soldier shall, in time of peace be quartered in any house,
+      Amendment III <span class="changetext-BBill">Because</span>
+      No  soldier shall, of peace be quartered in any house,
 
       Amendment IX
       The enumeration in the Constitution, of the right of the people, shall not be construed
@@ -438,8 +632,8 @@ and to petition the government for a redress of grievances.
       to deny or disparage others retained by the people.
 
       Amendment X
-      The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
-      are reserved to the states respectively, or to the people.
+      The powers not delegated to the United States by the Constitution,  nor prohibited by it to the states,
+      are reserved to the states respectively, or to the
 
 
               Amendment II
@@ -456,7 +650,7 @@ and to petition the government for a redress of grievances.
       <!--Section 5-->
 
       Amendment I
-      Congress shall make no<span class="changetext-L2Bill">law</span> respecting an establishment of religion,
+      Congress shall <span class="changetext-OOf">under</span>make no<span class="changetext-L2Bill">law</span> respecting an establishment of religion,
       or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
       and to petition the government for a redress of grievances.
 
@@ -490,7 +684,7 @@ and to petition the government for a redress of grievances.
         Amendment IV
         The right of the people to be secure in their persons, houses, papers, and effects,
         against unreasonable searches and seizures, <span class="changetext-BBill">will violate</span>, and no warrants shall issue,
-        but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
+        <span class="changetext-FOf">is regulated </span>but upon probable cause, supported by an oath or affirmation, and particularly describing the place to be searched,
         and the persons or things to be seized.
 
         Amendment V
@@ -514,7 +708,7 @@ and to petition the government for a redress of grievances.
 
         Amendment VIII
         Excessive bail shall not be required, nor excessive fines imposed,
-        nor cruel and unusual punishments inflicted.
+        nor cruel and unusual punishments inflicted. <span class="changetext-FOf">by the government</span>
 
         Amendment IX
         The enumeration in the Constitution, of the right of the people, shall not be construed
@@ -525,7 +719,7 @@ and to petition the government for a redress of grievances.
         are reserved to the states respectively, or to the people.
         Congress shall make no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
         or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
-        and to petition the government for a redress of grievances.
+        and to petition for a redress of grievances.
 
         <!--Section 6-->
 
@@ -577,7 +771,7 @@ and to petition the government for a redress of grievances.
           to deny or disparage others retained by the people.
 
           Amendment X
-          The powers not delegated to the United States by the Constitution, nor prohibited by it to the states,
+          The powers not <span class="changetext-FOf">and prohibited</span> delegated to the United States by the Constitution, by it to the states,
           are reserved to the states respectively, or to the people.
            no <span class="changetext-L2Bill">law</span> respecting an establishment of religion, or prohibiting the free exercise thereof;
           or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble,
@@ -656,7 +850,7 @@ and to petition the government for a redress of grievances.
             Amendment IV
             The right of the people to be secure in their persons, houses, papers, and effects,
             against unreasonable searches and seizures, will violate, and no warrants shall issue,
-            but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched,
+            but upon probable cause, supported by oath or affirmation, and particularly desc <span class="changetext-OOf">power</span>the place to be searched,
             and the persons or things to be seized.
 
             Amendment III
@@ -670,7 +864,7 @@ and to petition the government for a redress of grievances.
             and the persons or things to be seized.
 
             Amendment V
-            No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a grand jury,
+            No person shall be held to answer for a capit <span class="changetext-OOf">under</span> otherwise infamous crime, unless on a presentment or indictment of a grand jury,
             except in cases arising in the land or naval forces, or in the militia, when in actual service in time of war or public danger;
             nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled
             in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law;
@@ -678,7 +872,7 @@ and to petition the government for a redress of grievances.
             nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled
             in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law;
             nor shall private property be taken for public use, without just compensation.nor shall be compelled
-            in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of <span class="changetext-L2Bill">law</span>;
+            in any criminal case to be <span class="changetext-OOf">rights</span> a witness against himself, nor be deprived of life, liberty, or property, without due process of <span class="changetext-L2Bill">law</span>;
             nor shall private property be taken for public use, <span class="changetext-BBill">when necessary and convenient</span> the accused shall enjoy the right to a speedy and public trial,
             by an impartial jury of the state and district wherein the crime shall have been committed, which district shall
             have been previously ascertained by law, and to be informed of the nature and cause of the accusation;
@@ -709,7 +903,7 @@ and to petition the government for a redress of grievances.
             nor cruel and unusual punishments.
 
             Amendment IX
-            The enumeration in the Constitution, of the right of the people, shall not be construed
+            The enumeration <span class="changetext-FOf">by conspirator labels</span> in the Constitution, of the right of the people, shall not be construed
             to deny or disparage others retained by the people.
 
             Amendment VII
@@ -727,9 +921,9 @@ and to petition the government for a redress of grievances.
             in any court of the United States, than according to the rules of the common law.
 
             Amendment VIII
-            Excessive bail shall not be required, nor excessive fines imposed,
+            Excessive bail shall not be required, nor excessive fines   <span class="changetext-BBill">without due process of law</span> imposed,
 
-            <span class="changetext-BBill">without due process of law</span>
+
 
             Amendment IX
             The enumeration in the Constitution, of the right of the people, shall not be construed
