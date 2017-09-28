@@ -137,21 +137,34 @@ $( document ).ready(function() {
 
     $(".hoverme-shitred").hover(
           function () {
-            $(".hoverme-shitred").addClass("highlight-shitred");
+            $(".orig-shitred").addClass("highlight-shitred");
           },
           function () {
-              $(".hoverme-shitred").removeClass("highligh-shitred");
+              $(".orig-shitred").removeClass("highlight-shitred");
       });
 
       $(".hoverme-bullblue").hover(
             function () {
-              $(".hoverme-bullblue").addClass("highlight-bullblue");
+              $(".orig-bullblue").addClass("highlight-bullblue");
             },
             function () {
-                $(".hoverme-bullblue").removeClass("highlight-bullblue");
+                $(".orig-bullblue").removeClass("highlight-bullblue");
         });
 
+
+<!--marquee-->
+
+        $(function() {
+            $('marquee').mouseover(function() {
+                $(this).attr('scrollamount',0);
+            }).mouseout(function() {
+                 $(this).attr('scrollamount',5);
+            });
+        });
+
+
 });
+
 
 </script>
 
@@ -164,7 +177,6 @@ $( document ).ready(function() {
 
     .shoot {
       position: fixed;
-      align-items: center;
       text-transform: uppercase;
       color: white;
       letter-spacing: 2px !important;
@@ -174,26 +186,28 @@ $( document ).ready(function() {
       font-weight: normal;
       margin-top: 40px !important;
       margin-left: 75px !important;
+      transition: .8s all ease;
     }
 
-    .hoverme-shitred {
-    color: white;
-    letter-spacing: 2px;
-    font-size: 150px;
-    line-height: 150px;
-    font-family: 'Bungee', cursive;
-    font-weight: normal;
-    transition: .8s all ease;
-  }
 
-  .hoverme-bullblue {
+.orig-bullblue {
   color: white;
   letter-spacing: 2px;
   font-size: 150px;
   line-height: 150px;
   font-family: 'Bungee', cursive;
   font-weight: normal;
-  transition: .8s all ease;
+  transition: 3s all ease;
+}
+
+.orig-shitred {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 150px;
+  line-height: 150px;
+  font-family: 'Bungee', cursive;
+  font-weight: normal;
+  transition: 3s all ease;
 }
 
 .highlight-bullblue {
@@ -333,27 +347,17 @@ $( document ).ready(function() {
 
 
   <h1 class="shoot">
+
     <span class="hoverme-BBill">B</span>
     <span class="hoverme-IBill">I</span>
     <span class="hoverme-LBill">L</span>
     <span class="hoverme-L2Bill">L</span>
     <span class="hoverme-OOf">O</span>
     <span class="hoverme-FOf">F</span>
+
     <br>
-  <span class="hoverme-bullblue">
-  <span class="hoverme-shitred">
-    <span class="hoverme-BBs">B</span>
-    <span class="hoverme-UBs">U</span>
-    <span class="hoverme-LBs">L</span>
-    <span class="hoverme-L2Bs">L</span>
-  <span class="changetext-shitred">
-    <span class="hoverme-SBs">S</span>
-    <span class="hoverme-HBs">H</span>
-    <span class="hoverme-IBs">I</span>
-    <span class="hoverme-TBs">T</span>
-  </span>
-  </span>
- </span>
+
+bullshit
   </h1>
 
 <div class="block">
@@ -449,7 +453,6 @@ and to petition the government for a redress of grievances.
   to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor,
   and to have the assistance of counsel for his defense.
 
-  <span class="star"><marquee behavior="scroll" direction="left">&#9733;</marquee></span>
 
   Amendment VII
   In suits at common <span class="changetext-L2Bill">law</span>, where the value in controversy shall exceed twenty dollars,
